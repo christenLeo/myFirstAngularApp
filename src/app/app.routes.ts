@@ -4,7 +4,6 @@ import { TutorialComponent } from './pages/tutorial/tutorial.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent, children: [
-    { path: 'tutorial', component: TutorialComponent }
-  ]},
+  { path: 'home', component: HomeComponent },
+  { path: 'tutorial', component: TutorialComponent}
 ];
